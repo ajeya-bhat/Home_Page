@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Pages Assignment</title>
+    <style>
+        body {
+            background-color: #e2e2e2;
+            margin: 0;
+            padding: 0;
+            font-family: "Calibri", sans-serif;
+        }
+        
+        header {
+            background-color: #333;
+            color: #e0e0e1;
+            text-align: center;
+            padding: 10px;
+        }
+
+        
+        
+        nav {
+            text-align: center;
+            margin-top: 20px;
+            background-color: #e0e0e0;
+
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 10px;
+        }
+        
+        nav a:hover {
+            color: #555;
+            opacity: 0.4;
+        }
+        
+        section {
+            max-width: 90%; 
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #e1e1e1;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+        
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            opacity: 0.4;
+            color: #555;
+        }
+        
+        h2 {
+            font-size: 20px;
+            color: #333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        div {
+            background-color: #ddd; 
+            padding: 20px; 
+            border-radius: 5px; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            max-width: 90%; 
+            margin: 0 auto; 
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+        
+        strong {
+            font-weight: bold;
+        }
+        
+        p {
+            margin-bottom: 10px;
+        }
+        
+        ul a {
+            color: #007bff;
+        }
+        
+        ul a:hover {
+            text-decoration: underline;
+        }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GitHub Pages Assignment</h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('resume')">Resume</a>
+        <a href="#" onclick="showSection('projects')">Projects</a>
+        <a href="#" onclick="showSection('plots')">Plots</a>
+    </nav>
+    <section id="resume-section" style="display: block;">
+        <div>
+            <h1>Ajeya B S</h1>
+            <p>M.Tech Student, Dept. of Computational and Data Sciences</p>
+            <p>Indian Institute of Science, Bangalore</p>
+            <p><a href="tel:+919036895170">+91-9036895170</a></p>
+            <p><a href="mailto:ajeyabs@gmail.com">ajeyabs@gmail.com</a></p>
+            <p><a href="mailto:ajeyab@iisc.ac.in">ajeyab@iisc.ac.in</a></p>
+            <p><a href="https://github.com/ajeya-bhat">GitHub</a></p>
+            <p><a href="https://linkedin.com/in/ajeya-bhat/">LinkedIn</a></p>
+        </div>
+    
+        <section>
+            <h2>Education</h2>
+            <ul>
+                <li>
+                    <strong>Indian Institute of Science</strong>
+                    <p>M.Tech in Computational and Data Sciences</p>
+                    <p>CGPA: 8.9</p>
+                    <p>2022-24</p>
+                </li>
+                <li>
+                    <strong>PES University</strong>
+                    <p>B.Tech in Computer Science and Engineering</p>
+                    <p>CGPA: 9.82</p>
+                    <p>2017-21</p>
+                </li>
+            </ul>
+        </section>
+    
+        <section>
+            <h2>Experience</h2>
+            <ul>
+                <li>
+                    <strong>Software Engineer</strong>
+                    <p>Akamai Technologies</p>
+                    <p>July 2021 - July 2022</p>
+                    <ul>
+                        <li>Optimized the service to track customer footprints, reducing turnaround time by 2 days per MapReduce run.</li>
+                        <li>Implemented enhancements in MapReduce scripts and logic to accommodate new requirements seamlessly.</li>
+                        <li>Revamped the database design to enhance performance</li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <strong>Software Engineer Intern</strong>
+                    <p>Akamai Technologies</p>
+                    <p>Jan 2021 - Jun 2021</p>
+                    <ul>
+                        <li>Automated Azure metrics monitoring for capturing information about customers' footprint, enhancing operational efficiency.</li>
+                        <li>Redesigned the schema to improve data management and analysis.</li>
+                    </ul>
+                </li>
+                <br>
+                <li>
+                    <strong>Software Engineer Intern</strong>
+                    <p>Akamai Technologies</p>
+                    <p>Jun 2020 - Aug 2020</p>
+                    <ul>
+                        <li>Developed a custom tool to automate network capacity analysis.</li>
+                        <li>Designed and implemented backend databases to store queries and results.</li>
+                        <li>Created a user-friendly multi-page web application for viewing and running analyses.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        
+        <section>
+            <h2>Projects</h2>
+            <p><strong>A Lossless Compression Pipeline for Petabyte-scale Whole Genome Sequencing Data</strong></p>
+            <ul>
+                <li>Developed a software pipeline for scalable lossless compression of large-scale genomic data in the GenomeIndia project.</li>
+                <li>Pipeline achieved 5x better compression than standard gzip-compressed uBAM files while ensuring data fidelity, including special tags and headers, for seamless data reconstruction.</li>
+                <li>Optimized bioinformatics tools and enabled parallelism for efficient performance.</li>
+                <li>Submission accepted at HiPC 2023.</li>
+            </ul>
+
+            <p><strong><a href="https://github.com/ajeya-bhat/steam">Mini DBaaS for a ride-sharing service</a></strong></p>
+            <ul>
+                <li>Implemented a mini Database as a Service (DBaaS) for a ride-sharing service using Amazon EC2 instances.</li>
+                <li>Utilized RabbitMQ for message queuing, Flask for orchestrator, and Zookeeper for worker monitoring.</li>
+                <li>Ensured eventual consistency among multiple worker containers running individual databases.</li>
+            </ul>
+
+            <p><strong><a href="https://github.com/ajeya-bhat/steam">Video game commerce and cataloging website</a></strong></p>
+            <ul>
+                <li>Developed an e-catalog website centered around video games using a combination of MEAN Stack and Python.</li>
+                <li>Implemented design patterns Multistage download and Periodic Refresh for better performance.</li>
+            </ul>
+
+            <p><strong><a href="https://github.com/ajeyab22/fedml-privacy-mechanisms">Privacy-preserving mechanisms in Tier-Based Federated Learning</a></strong></p>
+            <ul>
+                <li>Worked on a project on federated learning, focusing on scalability and privacy challenges.</li>
+                <li>Proposed a synchronous approach to address the issues and implemented a tier-based strategy to handle slow clients (stragglers) and optimize training time.</li>
+                <li>Conducted experimental evaluations on the impact of Homomorphic Encryption (Pyfhel) and Differential Privacy, showing improved privacy guarantees while maintaining model accuracy in federated learning.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Technical Skills</h2>
+            <p>Familiar with the following:</p>
+            <ul>
+                <li>
+                    <strong>Programming and Declarative languages:</strong>
+                    <p>Python, C++, Java, Javascript, Bash, SQL.</p>
+                </li>
+                <li>
+                    <strong>Big Data and Cloud:</strong>
+                    <p>Hadoop, Spark, Azure, AWS.</p>
+                </li>
+                <li>
+                    <strong>Containerization and Orchestration:</strong>
+                    <p>Docker, Kubernetes.</p>
+                </li>
+                <li>
+                    <strong>Parallel Programming Models:</strong>
+                    <p>MPI, OpenMP, CUDA.</p>
+                </li>
+            </ul>
+        </section>
+        
+    </section>
+    <section id="projects-section" style="display: none;">
+        <section>
+            <h2>Projects</h2>
+            <p><strong>A Lossless Compression Pipeline for Petabyte-scale Whole Genome Sequencing Data</strong></p>
+            <ul>
+                <li>Developed a software pipeline for scalable lossless compression of large-scale genomic data in the GenomeIndia project.</li>
+                <li>Pipeline achieved 5x better compression than standard gzip-compressed uBAM files while ensuring data fidelity, including special tags and headers, for seamless data reconstruction.</li>
+                <li>Optimized bioinformatics tools and enabled parallelism for efficient performance.</li>
+                <li>Submission accepted at HiPC 2023.</li>
+            </ul>
+
+            <p><strong><a href="https://github.com/ajeya-bhat/steam">Mini DBaaS for a ride-sharing service</a></strong></p>
+            <ul>
+                <li>Implemented a mini Database as a Service (DBaaS) for a ride-sharing service using Amazon EC2 instances.</li>
+                <li>Utilized RabbitMQ for message queuing, Flask for orchestrator, and Zookeeper for worker monitoring.</li>
+                <li>Ensured eventual consistency among multiple worker containers running individual databases.</li>
+            </ul>
+
+            <p><strong><a href="https://github.com/ajeya-bhat/steam">Video game commerce and cataloging website</a></strong></p>
+            <ul>
+                <li>Developed an e-catalog website centered around video games using a combination of MEAN Stack and Python.</li>
+                <li>Implemented design patterns Multistage download and Periodic Refresh for better performance.</li>
+            </ul>
+
+            <p><strong><a href="https://github.com/ajeyab22/fedml-privacy-mechanisms">Privacy-preserving mechanisms in Tier-Based Federated Learning</a></strong></p>
+            <ul>
+                <li>Worked on a project on federated learning, focusing on scalability and privacy challenges.</li>
+                <li>Proposed a synchronous approach to address the issues and implemented a tier-based strategy to handle slow clients (stragglers) and optimize training time.</li>
+                <li>Conducted experimental evaluations on the impact of Homomorphic Encryption (Pyfhel) and Differential Privacy, showing improved privacy guarantees while maintaining model accuracy in federated learning.</li>
+            </ul>
+            <p>
+                <strong>
+                    <a href="https://github.com/Sundaresan-G/Parallel-K-means-clustering">
+                        Hybrid CPU-GPU KMeans clustering
+                    </a>
+                </strong>
+                <ul>
+                    <li>
+                        Implemented hybrid CPU-GPU KMeans clustering with MPI, OpenMP, and CUDA parallelization for 100 million data points.
+                    </li>
+                    <li>
+                        Experimented with varying K values and nodes.
+                    </li>
+                </ul>
+            </p>
+            <p>
+                <strong>
+                    <a href="https://github.com/AmruthKarnam/Sarcasm-Detection-and-Sentiment-Analysis-of-Tweets">
+                        Sarcasm Detection with Emojis on Tweets and Sentiment Analysis of Tweets
+                    </a>
+                </strong>
+                <ul>
+                    <li>
+                        Conducted sentiment analysis with Textblob on opinionated tweets.
+                    </li>
+                    <li>
+                        Implemented Bi-LSTM with Attention to detect sarcasm in textual data, considering the significant impact of emojis on overall emotion conveyed in tweets.
+                    </li>
+                </ul>
+            </p>
+        </section>
+    </section>
+    <section id="plots-section" style="display: none;">
+        <h2>Data Analysis and Visualization</h2>
+        <p>The data is obtained from the <a href="https://data.gov.in/">Open Government Data Platform</a>.</p>
+    
+        <h2>Year-wise Budget Allocation for the Department of Sports (2012-13 to 2021-22)</h2>
+        <p>We see that there has been an increase in the budget allocated for the Department of Sports, except for the year of COVID. The revised estimates have been on par with the actual expenditure.</p>
+        <p align="center">
+            <img width="500px" src="../plots/lineplot.jpg" alt="Line Plot">
+        </p>
+    
+        <h2>Neighbourhood Youth Parliament Component under NYLP (2014-2023)</h2>
+        <p>We see that there is no relation between the grants received, the number of events organized, and the number of participants.</p>
+        <p align="center">
+            <img width="500px" src="../plots/scatterplot.jpg" alt="Scatter Plot">
+        </p>
+    
+        <h2>City-wise List of Wellness Centres</h2>
+        <p>Most wellness centers across cities have doctors in single digits, and only a few outliers have over 10 doctors.</p>
+        <p align="center">
+            <img width="500px" src="../plots/boxplot.jpg" alt="Box Plot">
+        </p>
+    </section>
+
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('resume-section').style.display = 'none';
+            document.getElementById('projects-section').style.display = 'none';
+            document.getElementById('plots-section').style.display = 'none';
+            document.getElementById(sectionId + '-section').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
